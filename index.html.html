@@ -1,0 +1,2051 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>فریشتە 🌸</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Vazirmatn:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+
+
+<style>
+
+/* =====================================
+   🎨 بنەڕەتی
+===================================== */
+
+:root {
+
+    --midnight-bg: #0b0718;
+
+    --pink-primary: #f06fae;
+    --pink-light: #ffd1e5;
+
+    --parchment-bg: #fff9fc;
+    --parchment-border: #e6a1c0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        'Vazirmatn',
+        'Noto Naskh Arabic',
+        sans-serif;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(240,111,174,0.22),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(154,93,205,0.22),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #0b0718 0%,
+            #17102b 45%,
+            #0d0719 100%
+        );
+
+    color: #fff0f7;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    touch-action: manipulation;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.font-amiri {
+    font-family: 'Amiri', serif;
+}
+
+
+/* =====================================
+   📜 کاغەزی نامە
+===================================== */
+
+.scroll-paper {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #fffafd 0%,
+            #fff4f9 50%,
+            #fce5f0 100%
+        );
+
+    box-shadow:
+
+        0 0 50px rgba(240,111,174,0.30),
+
+        0 20px 40px rgba(0,0,0,0.75),
+
+        inset 0 0 60px rgba(214,105,160,0.12);
+
+    border:
+        2px solid var(--parchment-border);
+
+    color: #481d35;
+
+    transform-origin: center top;
+
+    transition:
+        all 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+
+
+/* =====================================
+   🪄 میللەکانی نامە
+===================================== */
+
+.scroll-bar {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #42132f 0%,
+            #7c3158 20%,
+            #e99abd 50%,
+            #7c3158 80%,
+            #42132f 100%
+        );
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.65);
+}
+
+
+/* =====================================
+   ✨ ناوی فریشتە
+===================================== */
+
+.glow-gold-text {
+
+    color: #ffd6e8;
+
+    text-shadow:
+
+        0 0 10px
+        rgba(240,111,174,0.95),
+
+        0 0 25px
+        rgba(240,111,174,0.65),
+
+        0 0 45px
+        rgba(154,93,205,0.45);
+}
+
+
+/* =====================================
+   🌙 مانگ
+===================================== */
+
+.glow-moon {
+
+    filter:
+
+        drop-shadow(
+            0 0 15px
+            rgba(255,220,235,0.85)
+        )
+
+        drop-shadow(
+            0 0 35px
+            rgba(240,111,174,0.45)
+        );
+}
+
+
+/* =====================================
+   🏮 کارتەکان
+===================================== */
+
+@keyframes lanternFloat {
+
+    0%,100% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-10px)
+            rotate(1deg);
+    }
+}
+
+
+.floating-lantern {
+
+    animation:
+        lanternFloat 5s infinite ease-in-out;
+
+    filter:
+
+        drop-shadow(
+            0 10px 15px
+            rgba(240,111,174,0.32)
+        );
+}
+
+
+/* =====================================
+   💗 Glow بۆ دوگمە
+===================================== */
+
+@keyframes pinkPulse {
+
+    0%,100% {
+
+        box-shadow:
+            0 0 15px
+            rgba(240,111,174,0.40);
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 35px
+            rgba(240,111,174,0.85);
+    }
+}
+
+
+.btn-gold-glow {
+
+    animation:
+        pinkPulse 3s infinite;
+}
+
+
+/* =====================================
+   🌸 Scrollbar
+===================================== */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #17102b;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #f06fae,
+            #9a5dcd
+        );
+
+    border-radius: 3px;
+}
+
+
+/* =====================================
+   💕 ڕەنگەکان
+===================================== */
+
+.text-amber-200,
+.text-amber-300,
+.text-amber-400 {
+
+    color:
+        #ffc7df !important;
+}
+
+
+.text-amber-700 {
+
+    color:
+        #a83f72 !important;
+}
+
+
+.text-amber-900,
+.text-amber-950 {
+
+    color:
+        #521c3a !important;
+}
+
+
+.border-amber-500\/30 {
+
+    border-color:
+        rgba(240,111,174,0.30) !important;
+}
+
+
+.border-amber-500\/40 {
+
+    border-color:
+        rgba(240,111,174,0.40) !important;
+}
+
+
+.border-amber-400 {
+
+    border-color:
+        #f28ab9 !important;
+}
+
+
+.bg-amber-500 {
+
+    background-color:
+        #ed6fa8 !important;
+}
+
+
+.bg-amber-500\/20 {
+
+    background-color:
+        rgba(237,111,168,0.20) !important;
+}
+
+
+/* =====================================
+   📱 Mobile
+===================================== */
+
+@media (max-width:640px) {
+
+    body {
+        padding-bottom: 10px;
+    }
+
+
+    main {
+
+        padding-left:
+            12px !important;
+
+        padding-right:
+            12px !important;
+    }
+
+
+    /* ناوی فریشتە */
+
+    h1.glow-gold-text {
+
+        font-size:
+            2.7rem !important;
+
+        line-height:
+            1.2;
+
+        white-space:
+            nowrap;
+    }
+
+
+    /* مانگ */
+
+    .glow-moon {
+
+        font-size:
+            3.5rem !important;
+    }
+
+
+    /* نامە */
+
+    .scroll-paper {
+
+        padding:
+            18px !important;
+
+        border-width:
+            1.5px;
+
+        border-radius:
+            5px;
+    }
+
+
+    /* فریم */
+
+    .scroll-paper > div {
+
+        padding:
+            16px !important;
+    }
+
+
+    /* ناونیشانی شعر */
+
+    .scroll-paper .text-amber-900 {
+
+        font-size:
+            0.82rem !important;
+
+        margin-bottom:
+            18px !important;
+
+        line-height:
+            1.8;
+    }
+
+
+    /* شعر */
+
+    .scroll-paper .text-xl {
+
+        font-size:
+            1.12rem !important;
+
+        line-height:
+            2.15 !important;
+    }
+
+
+    .scroll-paper .space-y-6 > :not([hidden]) ~ :not([hidden]) {
+
+        margin-top:
+            1rem !important;
+    }
+
+
+    /* میللەکان */
+
+    #top-bar,
+    #bottom-bar {
+
+        width:
+            103% !important;
+
+        height:
+            18px !important;
+    }
+
+
+    #top-bar div,
+    #bottom-bar div {
+
+        width:
+            10px !important;
+
+        height:
+            10px !important;
+    }
+
+
+    /* دوگمە */
+
+    #open-scroll-btn {
+
+        margin-top:
+            24px;
+
+        padding:
+            13px 24px !important;
+
+        font-size:
+            0.95rem !important;
+
+        min-height:
+            50px;
+
+        width:
+            auto;
+    }
+
+
+    /* کارتەکان */
+
+    #lanterns-row {
+
+        gap:
+            8px !important;
+
+        margin-top:
+            24px !important;
+
+        max-width:
+            100%;
+    }
+
+
+    #lanterns-row button {
+
+        padding:
+            12px 5px !important;
+
+        min-height:
+            82px;
+
+        border-radius:
+            16px;
+    }
+
+
+    #lanterns-row i {
+
+        font-size:
+            1.35rem !important;
+    }
+
+
+    #lanterns-row span {
+
+        font-size:
+            0.70rem !important;
+    }
+
+
+    /* Modal */
+
+    #wish-card {
+
+        padding:
+            24px 18px !important;
+
+        border-radius:
+            24px;
+
+        max-width:
+            calc(100vw - 28px);
+    }
+
+
+    #wish-title {
+
+        font-size:
+            1.7rem !important;
+    }
+
+
+    #wish-body {
+
+        font-size:
+            0.9rem !important;
+
+        line-height:
+            2;
+    }
+
+
+    /* Footer */
+
+    footer {
+
+        font-size:
+            0.68rem !important;
+
+        padding-top:
+            16px !important;
+
+        padding-bottom:
+            10px !important;
+    }
+}
+
+
+/* =====================================
+   📱 مۆبایلی زۆر بچووک
+===================================== */
+
+@media (max-width:380px) {
+
+    h1.glow-gold-text {
+
+        font-size:
+            2.25rem !important;
+    }
+
+
+    .scroll-paper {
+
+        padding:
+            13px !important;
+    }
+
+
+    .scroll-paper > div {
+
+        padding:
+            12px !important;
+    }
+
+
+    .scroll-paper .text-xl {
+
+        font-size:
+            1rem !important;
+
+        line-height:
+            2 !important;
+    }
+
+
+    #open-scroll-btn {
+
+        padding:
+            11px 20px !important;
+
+        font-size:
+            0.88rem !important;
+    }
+
+
+    #lanterns-row button {
+
+        min-height:
+            75px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body class="relative flex flex-col justify-between items-center min-h-screen select-none overflow-x-hidden">
+
+
+<!-- =====================================
+     ⭐ ئاسمانی ئەستێرە
+===================================== -->
+
+<canvas
+    id="sky-canvas"
+    class="fixed inset-0 pointer-events-none z-0">
+</canvas>
+
+
+<!-- =====================================
+     Main
+===================================== -->
+
+<main class="relative z-10 w-full max-w-2xl px-4 my-auto flex flex-col items-center">
+
+
+    <!-- 🌙 مانگ + فریشتە -->
+
+    <div class="flex flex-col items-center mb-6 text-center">
+
+        <div class="relative mb-3">
+
+            <i class="
+                fa-solid
+                fa-moon
+                text-6xl
+                text-pink-200
+                glow-moon
+                transform
+                -rotate-12
+            "></i>
+
+
+            <i class="
+                fa-solid
+                fa-star
+                text-2xl
+                text-pink-300
+                absolute
+                -top-1
+                -right-4
+                animate-pulse
+            "></i>
+
+        </div>
+
+
+        <h1 class="
+            glow-gold-text
+            font-black
+            text-4xl
+            sm:text-6xl
+            tracking-wide
+            font-amiri
+        ">
+
+            فریشتە 🌸
+
+        </h1>
+
+    </div>
+
+
+    <!-- =====================================
+         📜 نامە
+    ===================================== -->
+
+    <div class="
+        w-full
+        relative
+        my-4
+        flex
+        flex-col
+        items-center
+    ">
+
+
+        <!-- Top Roller -->
+
+        <div
+            id="top-bar"
+            class="
+                scroll-bar
+                w-[104%]
+                h-5
+                sm:h-6
+                rounded-full
+                z-20
+                flex
+                items-center
+                justify-between
+                px-2
+            "
+        >
+
+            <div class="
+                w-3 h-3
+                sm:w-4 sm:h-4
+                rounded-full
+                bg-pink-300
+                shadow-inner
+            "></div>
+
+
+            <div class="
+                w-3 h-3
+                sm:w-4 sm:h-4
+                rounded-full
+                bg-pink-300
+                shadow-inner
+            "></div>
+
+        </div>
+
+
+        <!-- Scroll Wrapper -->
+
+        <div
+            id="scroll-wrapper"
+            class="
+                w-full
+                relative
+                z-10
+                overflow-hidden
+                transition-all
+                duration-1000
+                max-h-[140px]
+                rounded-sm
+            "
+        >
+
+
+            <!-- Ribbon -->
+
+            <div
+                id="ribbon-overlay"
+                class="
+                    ribbon-wrap
+                    absolute
+                    inset-0
+                    bg-pink-950/20
+                    backdrop-blur-[2px]
+                    z-30
+                    flex
+                    flex-col
+                    items-center
+                    justify-center
+                    border-y
+                    border-pink-500/40
+                "
+            >
+
+                <div class="
+                    w-full
+                    h-8
+                    bg-gradient-to-r
+                    from-pink-800
+                    via-pink-500
+                    to-pink-800
+                    shadow-lg
+                    flex
+                    items-center
+                    justify-center
+                    gap-2
+                    text-white
+                    font-bold
+                    text-sm
+                    tracking-wider
+                ">
+
+                    <i class="
+                        fa-solid
+                        fa-ribbon
+                        text-pink-100
+                        text-base
+                    "></i>
+
+
+                    <span>
+                        نامەی تایبەتی فریشتە
+                    </span>
+
+
+                    <i class="
+                        fa-solid
+                        fa-ribbon
+                        text-pink-100
+                        text-base
+                    "></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- Parchment -->
+
+            <div
+                id="scroll-content"
+                class="
+                    scroll-paper
+                    w-full
+                    p-6
+                    sm:p-10
+                    text-center
+                    relative
+                    opacity-40
+                    blur-[1px]
+                "
+            >
+
+
+                <div class="
+                    border
+                    border-pink-800/20
+                    p-4
+                    sm:p-8
+                    rounded-lg
+                    relative
+                ">
+
+
+                    <!-- Heading -->
+
+                    <div class="
+                        flex
+                        items-center
+                        justify-center
+                        gap-2
+                        text-pink-900
+                        text-sm
+                        mb-6
+                        font-semibold
+                    ">
+
+                        <i class="
+                            fa-solid
+                            fa-feather-pointed
+                            text-pink-700
+                        "></i>
+
+
+                        <span>
+                            شیعرێک بۆ شازادەی دڵ
+                        </span>
+
+
+                        <i class="
+                            fa-solid
+                            fa-feather-pointed
+                            text-pink-700
+                            transform
+                            -scale-x-100
+                        "></i>
+
+                    </div>
+
+
+                    <!-- Poetry -->
+
+                    <div class="
+                        space-y-6
+                        text-pink-950
+                        font-amiri
+                        text-xl
+                        sm:text-3xl
+                        font-bold
+                        leading-relaxed
+                    ">
+
+
+                        <p>
+                            تاڵ و شیرین پێکەوە نەمدیوە چا بێ، چا نەبێ
+                        </p>
+
+
+                        <p>
+                            جوانی و نازداری پێکەوە نەمدیوە غەیری تۆ نەبێ
+                        </p>
+
+
+                        <p>
+                            هەر کەس بیەوێ باسی جوانی بکا موحتاجی چاوت دەبێ
+                        </p>
+
+
+                        <p>
+                            دەردی دڵ دەرمان نابێ بە قسەی تۆ نەبێ
+                        </p>
+
+
+                        <p>
+                            ئەوەی جارێ بتبینێ حەتمەن هۆگری دیدارت دەبێ
+                        </p>
+
+                    </div>
+
+
+                    <!-- Seal -->
+
+                    <div class="
+                        mt-8
+                        flex
+                        justify-center
+                        items-center
+                        gap-2
+                    ">
+
+                        <div class="
+                            w-12 h-12
+                            rounded-full
+                            bg-pink-900/90
+                            text-pink-200
+                            border-2
+                            border-pink-300
+                            flex
+                            items-center
+                            justify-center
+                            shadow-md
+                            transform
+                            rotate-12
+                        ">
+
+                            <i class="
+                                fa-solid
+                                fa-heart
+                                text-lg
+                            "></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Roller -->
+
+        <div
+            id="bottom-bar"
+            class="
+                scroll-bar
+                w-[104%]
+                h-5
+                sm:h-6
+                rounded-full
+                z-20
+                flex
+                items-center
+                justify-between
+                px-2
+            "
+        >
+
+            <div class="
+                w-3 h-3
+                sm:w-4 sm:h-4
+                rounded-full
+                bg-pink-300
+                shadow-inner
+            "></div>
+
+
+            <div class="
+                w-3 h-3
+                sm:w-4 sm:h-4
+                rounded-full
+                bg-pink-300
+                shadow-inner
+            "></div>
+
+        </div>
+
+
+        <!-- Open Button -->
+
+        <button
+            id="open-scroll-btn"
+            class="
+                btn-gold-glow
+                mt-8
+                z-30
+                px-8
+                py-4
+                rounded-full
+                bg-gradient-to-r
+                from-pink-500
+                via-pink-400
+                to-pink-600
+                text-white
+                font-bold
+                text-base
+                sm:text-lg
+                flex
+                items-center
+                gap-3
+                cursor-pointer
+                hover:scale-105
+                active:scale-95
+                transition-all
+                duration-300
+                shadow-2xl
+            "
+        >
+
+            <i class="
+                fa-solid
+                fa-scroll
+                text-xl
+            "></i>
+
+
+            <span>
+                کردنەوەی نامەکە
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- =====================================
+         💕 کارتەکان
+    ===================================== -->
+
+    <div
+        id="lanterns-row"
+        class="
+            w-full
+            max-w-lg
+            grid
+            grid-cols-3
+            gap-3
+            sm:gap-6
+            mt-8
+            z-20
+            opacity-0
+            transition-opacity
+            duration-1000
+            pointer-events-none
+    ">
+
+
+        <!-- چاوەکانت -->
+
+        <button
+            onclick="openWishModal(1)"
+            class="
+                floating-lantern
+                flex
+                flex-col
+                items-center
+                gap-2
+                p-3
+                sm:p-4
+                rounded-2xl
+                bg-slate-900/60
+                border
+                border-pink-500/30
+                hover:border-pink-400
+                text-pink-200
+                hover:text-white
+                transition-all
+                cursor-pointer
+                group
+                backdrop-blur-md
+            "
+        >
+
+            <i class="
+                fa-solid
+                fa-eye
+                text-2xl
+                text-pink-400
+                group-hover:scale-110
+                transition-transform
+            "></i>
+
+
+            <span class="
+                text-xs
+                sm:text-sm
+                font-semibold
+            ">
+                چاوەکانت
+            </span>
+
+        </button>
+
+
+        <!-- جوانیت -->
+
+        <button
+            onclick="openWishModal(2)"
+            class="
+                floating-lantern
+                flex
+                flex-col
+                items-center
+                gap-2
+                p-3
+                sm:p-4
+                rounded-2xl
+                bg-slate-900/60
+                border
+                border-pink-500/30
+                hover:border-pink-400
+                text-pink-200
+                hover:text-white
+                transition-all
+                cursor-pointer
+                group
+                backdrop-blur-md
+            "
+        >
+
+            <i class="
+                fa-solid
+                fa-wand-magic-sparkles
+                text-2xl
+                text-pink-400
+                group-hover:scale-110
+                transition-transform
+            "></i>
+
+
+            <span class="
+                text-xs
+                sm:text-sm
+                font-semibold
+            ">
+                جوانیت
+            </span>
+
+        </button>
+
+
+        <!-- خەندەکانت -->
+
+        <button
+            onclick="openWishModal(3)"
+            class="
+                floating-lantern
+                flex
+                flex-col
+                items-center
+                gap-2
+                p-3
+                sm:p-4
+                rounded-2xl
+                bg-slate-900/60
+                border
+                border-pink-500/30
+                hover:border-pink-400
+                text-pink-200
+                hover:text-white
+                transition-all
+                cursor-pointer
+                group
+                backdrop-blur-md
+            "
+        >
+
+            <i class="
+                fa-solid
+                fa-face-smile
+                text-2xl
+                text-pink-400
+                group-hover:scale-110
+                transition-transform
+            "></i>
+
+
+            <span class="
+                text-xs
+                sm:text-sm
+                font-semibold
+            ">
+                خەندەکانت
+            </span>
+
+        </button>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================
+     💌 Modal
+===================================== -->
+
+<div
+    id="wish-modal"
+    class="
+        fixed
+        inset-0
+        z-50
+        flex
+        items-center
+        justify-center
+        p-4
+        bg-slate-950/80
+        backdrop-blur-md
+        opacity-0
+        pointer-events-none
+        transition-all
+        duration-500
+    "
+>
+
+
+    <div
+        id="wish-card"
+        class="
+            bg-slate-900
+            border
+            border-pink-500/40
+            w-full
+            max-w-md
+            rounded-3xl
+            p-6
+            sm:p-8
+            text-center
+            relative
+            shadow-2xl
+            transform
+            scale-90
+            transition-all
+            duration-500
+            text-pink-100
+        "
+    >
+
+
+        <button
+            onclick="closeWishModal()"
+            class="
+                absolute
+                top-4
+                left-4
+                w-9
+                h-9
+                rounded-full
+                bg-slate-800
+                border
+                border-pink-500/30
+                text-pink-300
+                hover:text-white
+                flex
+                items-center
+                justify-center
+                cursor-pointer
+            "
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <div
+            id="wish-icon"
+            class="
+                text-4xl
+                text-pink-400
+                mb-3
+            "
+        ></div>
+
+
+        <h3
+            id="wish-title"
+            class="
+                glow-gold-text
+                text-2xl
+                font-bold
+                font-amiri
+                mb-3
+            "
+        ></h3>
+
+
+        <div
+            class="
+                h-[1px]
+                w-24
+                bg-gradient-to-r
+                from-transparent
+                via-pink-400/50
+                to-transparent
+                mx-auto
+                mb-4
+            "
+        ></div>
+
+
+        <p
+            id="wish-body"
+            class="
+                text-sm
+                sm:text-base
+                leading-relaxed
+                text-pink-200/90
+                font-medium
+            "
+        ></p>
+
+
+        <button
+            onclick="closeWishModal()"
+            class="
+                mt-6
+                px-6
+                py-2
+                rounded-full
+                bg-pink-500/20
+                border
+                border-pink-500/40
+                text-pink-300
+                hover:bg-pink-500
+                hover:text-white
+                font-bold
+                text-xs
+                sm:text-sm
+                transition-all
+                cursor-pointer
+            "
+        >
+
+            داخستن
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================
+     🌸 Footer
+===================================== -->
+
+<footer
+   <span class="text-yellow-300 font-semibold"> دروستکراوە بە تایبەتی لەژێر ئاسمانی ئەستێرەکان بۆ فریشتە </span>
+</footer>
+
+
+<script>
+
+/* =====================================
+   ⭐ Starry Sky
+===================================== */
+
+const canvas =
+    document.getElementById('sky-canvas');
+
+const ctx =
+    canvas.getContext('2d');
+
+
+function resizeCanvas() {
+
+    canvas.width =
+        window.innerWidth;
+
+    canvas.height =
+        window.innerHeight;
+}
+
+
+resizeCanvas();
+
+
+window.addEventListener(
+    'resize',
+    resizeCanvas
+);
+
+
+/* =====================================
+   ⭐ Stars
+===================================== */
+
+const stars =
+    Array.from(
+        { length: 120 },
+        () => ({
+
+            x:
+                Math.random() *
+                window.innerWidth,
+
+            y:
+                Math.random() *
+                window.innerHeight,
+
+            size:
+                Math.random() * 2 + 0.5,
+
+            alpha:
+                Math.random(),
+
+            twinkleSpeed:
+                Math.random() *
+                0.02 + 0.005
+
+        })
+    );
+
+
+/* =====================================
+   💗 Stardust
+===================================== */
+
+const particles = [];
+
+
+function addStardust(x,y) {
+
+    for(let i=0;i<3;i++) {
+
+        particles.push({
+
+            x:
+                x +
+                (Math.random()-0.5)*15,
+
+            y:
+                y +
+                (Math.random()-0.5)*15,
+
+            size:
+                Math.random()*3+1,
+
+            alpha:1,
+
+            color:
+                Math.random()>0.5
+                ? '#ffd1e5'
+                : '#f06fae',
+
+            vy:
+                Math.random()*-1-0.5
+        });
+    }
+}
+
+
+window.addEventListener(
+    'mousemove',
+    e =>
+        addStardust(
+            e.clientX,
+            e.clientY
+        )
+);
+
+
+window.addEventListener(
+    'touchmove',
+    e => {
+
+        if(e.touches.length > 0) {
+
+            addStardust(
+                e.touches[0].clientX,
+                e.touches[0].clientY
+            );
+        }
+
+    },
+    { passive:true }
+);
+
+
+/* =====================================
+   🌠 Shooting Star
+===================================== */
+
+let shootingStar = null;
+
+
+function triggerShootingStar() {
+
+    shootingStar = {
+
+        x:
+            Math.random() *
+            canvas.width *
+            0.8,
+
+        y:
+            Math.random() *
+            canvas.height *
+            0.4,
+
+        length:
+            Math.random()*80+50,
+
+        speed:
+            Math.random()*10+12,
+
+        alpha:1
+    };
+
+
+    setTimeout(
+        triggerShootingStar,
+        Math.random()*6000+4000
+    );
+}
+
+
+triggerShootingStar();
+
+
+/* =====================================
+   ⭐ Render Sky
+===================================== */
+
+function renderSky() {
+
+    ctx.clearRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+
+    stars.forEach(star => {
+
+        star.alpha +=
+            star.twinkleSpeed;
+
+
+        if(
+            star.alpha > 1 ||
+            star.alpha < 0
+        ) {
+
+            star.twinkleSpeed =
+                -star.twinkleSpeed;
+        }
+
+
+        ctx.save();
+
+
+        ctx.globalAlpha =
+            Math.max(
+                0,
+                Math.min(
+                    1,
+                    star.alpha
+                )
+            );
+
+
+        ctx.fillStyle =
+            '#ffd1e5';
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+            star.x,
+            star.y,
+            star.size,
+            0,
+            Math.PI*2
+        );
+
+
+        ctx.fill();
+
+
+        ctx.restore();
+
+    });
+
+
+    /* Stardust */
+
+    for(
+        let i=particles.length-1;
+        i>=0;
+        i--
+    ) {
+
+        const p =
+            particles[i];
+
+
+        p.y += p.vy;
+
+        p.alpha -= 0.02;
+
+
+        if(p.alpha <= 0) {
+
+            particles.splice(i,1);
+
+            continue;
+        }
+
+
+        ctx.save();
+
+
+        ctx.globalAlpha =
+            p.alpha;
+
+
+        ctx.fillStyle =
+            p.color;
+
+
+        ctx.beginPath();
+
+
+        ctx.arc(
+            p.x,
+            p.y,
+            p.size,
+            0,
+            Math.PI*2
+        );
+
+
+        ctx.fill();
+
+        ctx.restore();
+    }
+
+
+    /* Shooting Star */
+
+    if(shootingStar) {
+
+        shootingStar.x +=
+            shootingStar.speed;
+
+        shootingStar.y +=
+            shootingStar.speed*0.5;
+
+        shootingStar.alpha -=
+            0.02;
+
+
+        ctx.save();
+
+
+        ctx.globalAlpha =
+            Math.max(
+                0,
+                shootingStar.alpha
+            );
+
+
+        const gradient =
+            ctx.createLinearGradient(
+                shootingStar.x,
+                shootingStar.y,
+                shootingStar.x -
+                    shootingStar.length,
+                shootingStar.y -
+                    shootingStar.length*0.5
+            );
+
+
+        gradient.addColorStop(
+            0,
+            '#ffffff'
+        );
+
+
+        gradient.addColorStop(
+            0.5,
+            '#f06fae'
+        );
+
+
+        gradient.addColorStop(
+            1,
+            'transparent'
+        );
+
+
+        ctx.strokeStyle =
+            gradient;
+
+
+        ctx.lineWidth = 2;
+
+
+        ctx.beginPath();
+
+
+        ctx.moveTo(
+            shootingStar.x,
+            shootingStar.y
+        );
+
+
+        ctx.lineTo(
+            shootingStar.x -
+                shootingStar.length,
+            shootingStar.y -
+                shootingStar.length*0.5
+        );
+
+
+        ctx.stroke();
+
+
+        ctx.restore();
+
+
+        if(
+            shootingStar.alpha <= 0
+        ) {
+
+            shootingStar = null;
+        }
+    }
+
+
+    requestAnimationFrame(
+        renderSky
+    );
+}
+
+
+renderSky();
+
+
+/* =====================================
+   📜 Open Scroll
+===================================== */
+
+const openBtn =
+    document.getElementById(
+        'open-scroll-btn'
+    );
+
+
+const scrollWrapper =
+    document.getElementById(
+        'scroll-wrapper'
+    );
+
+
+const ribbonOverlay =
+    document.getElementById(
+        'ribbon-overlay'
+    );
+
+
+const scrollContent =
+    document.getElementById(
+        'scroll-content'
+    );
+
+
+const lanternsRow =
+    document.getElementById(
+        'lanterns-row'
+    );
+
+
+let isOpened = false;
+
+
+openBtn.addEventListener(
+    'click',
+    () => {
+
+        if(!isOpened) {
+
+            isOpened = true;
+
+
+            ribbonOverlay.style.opacity =
+                '0';
+
+
+            ribbonOverlay.style.transform =
+                'scaleY(0)';
+
+
+            scrollWrapper.style.maxHeight =
+                '1200px';
+
+
+            scrollContent.classList.remove(
+                'opacity-40',
+                'blur-[1px]'
+            );
+
+
+            scrollContent.classList.add(
+                'opacity-100'
+            );
+
+
+            openBtn.style.opacity =
+                '0';
+
+
+            openBtn.style.transform =
+                'scale(0.8)';
+
+
+            setTimeout(() => {
+
+                openBtn.style.display =
+                    'none';
+
+
+                lanternsRow.classList.remove(
+                    'opacity-0',
+                    'pointer-events-none'
+                );
+
+
+                lanternsRow.classList.add(
+                    'opacity-100'
+                );
+
+            },500);
+
+        }
+
+    }
+);
+
+
+/* =====================================
+   💗 Wish Modal
+===================================== */
+
+const wishModal =
+    document.getElementById(
+        'wish-modal'
+    );
+
+
+const wishCard =
+    document.getElementById(
+        'wish-card'
+    );
+
+
+const wishIcon =
+    document.getElementById(
+        'wish-icon'
+    );
+
+
+const wishTitle =
+    document.getElementById(
+        'wish-title'
+    );
+
+
+const wishBody =
+    document.getElementById(
+        'wish-body'
+    );
+
+
+const wishData = {
+
+    1: {
+
+        icon:
+            '<i class="fa-solid fa-eye"></i>',
+
+        title:
+            'چاوەکانت',
+
+        body:
+            'چاوەکانت قوڵیی ئاسمانی شەون، هەر نیگایەکت وەک ئەستێرەیەکی گەش ڕێگەی تاریکی دڵ ڕووناک دەکاتەوە.'
+    },
+
+
+    2: {
+
+        icon:
+            '<i class="fa-solid fa-wand-magic-sparkles"></i>',
+
+        title:
+            'ڕاز و جوانیت',
+
+        body:
+            'جوانیی تۆ تەنها لە ڕووساردا نییە، بەڵکو لە ئارامیی ڕۆحتدایە کە هەموو ساتێک دەکاتە دیارییەکی نایاب.'
+    },
+
+
+    3: {
+
+        icon:
+            '<i class="fa-solid fa-face-smile"></i>',
+
+        title:
+            'بزەی لێوەکانت',
+
+        body:
+            'خەندەکانت وەک یەکەم تیشکی خۆرهەڵات وایە، هەموو ماندووبوونێک لەبیر دەباتەوە و دڵ پڕ دەکات لە ئومێد.'
+    }
+
+};
+
+
+/* =====================================
+   💌 Open Modal
+===================================== */
+
+function openWishModal(id) {
+
+    const data =
+        wishData[id];
+
+
+    wishIcon.innerHTML =
+        data.icon;
+
+
+    wishTitle.innerText =
+        data.title;
+
+
+    wishBody.innerText =
+        data.body;
+
+
+    wishModal.classList.remove(
+        'opacity-0',
+        'pointer-events-none'
+    );
+
+
+    wishCard.classList.remove(
+        'scale-90'
+    );
+
+
+    wishCard.classList.add(
+        'scale-100'
+    );
+}
+
+
+/* =====================================
+   ❌ Close Modal
+===================================== */
+
+function closeWishModal() {
+
+    wishModal.classList.add(
+        'opacity-0',
+        'pointer-events-none'
+    );
+
+
+    wishCard.classList.remove(
+        'scale-100'
+    );
+
+
+    wishCard.classList.add(
+        'scale-90'
+    );
+}
+
+
+/* =====================================
+   👆 Close Backdrop
+===================================== */
+
+wishModal.addEventListener(
+    'click',
+    e => {
+
+        if(e.target === wishModal) {
+
+            closeWishModal();
+        }
+    }
+);
+
+</script>
+
+</body>
+</html>
